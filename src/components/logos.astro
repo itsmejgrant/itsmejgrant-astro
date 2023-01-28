@@ -1,16 +1,40 @@
 ---
 // @ts-ignore
-import { Icon } from "astro-icon";
+import { Image } from "@astrojs/image/components";
+import physiogotherapy from "assets/physigotherapy-logo.jpeg";
+import ecu from "assets/ecu-logo.png";
+import uwa from "assets/uwa-logo.png";
 ---
 
-<div class="mt-24">
-  <h2 class="text-center text-slate-500">Works with your technologies</h2>
+<div class="mb-24 text-center">
+  <!-- <p class="uppercase tracking-wider font-medium mb-4 text-primary">
+    Impact-driven websites for Perth locals
+  </p> -->
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Organisations I've helped
+  </h2>
+  <p class="max-w-lg mx-auto mt-4 text-slate-600">I can't help with your golf swing, but I can guarantee a website that will be a hole in one! Just ask some of the great clients I've had the opportunity to work with.</p>
   <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-    <Icon class="h-8 md:h-12" name="simple-icons:react" />
-    <Icon class="h-8 md:h-12" name="simple-icons:svelte" />
-    <Icon class="h-8 md:h-14" name="simple-icons:tailwindcss" />
-    <Icon class="h-8 md:h-16" name="simple-icons:alpinedotjs" />
-    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
-    <Icon class="h-8 md:h-12" name="simple-icons:astro" />
-  </div>
+      <Image
+      src={ecu}
+      alt="Edith Cowen University logo"
+      loading="eager"
+      format="avif"
+      class="object-contain h-16 w-fit"
+      />
+      <Image
+      src={uwa}
+      alt="University of Western Australia logo"
+      loading="eager"
+      format="avif"
+      class="object-contain h-16 w-fit"
+      />
+      <Image
+      src={physiogotherapy}
+      alt="PhysiGoTherapy logo"
+      loading="eager"
+      format="avif"
+      class="object-contain h-16 w-fit"
+    />
+    </div>
 </div>
